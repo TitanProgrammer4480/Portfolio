@@ -38,10 +38,10 @@ a {
 
 .list {
   padding-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  justify-content: space-around;
 }
 
 .g-list {
@@ -86,10 +86,16 @@ c-list {
   .g-list {
     grid-template-columns: auto;
   }
+  .list {
+    grid-template-columns: auto;
+  }
 }
 
 @media only screen and (min-width: 500px) {
   .g-list {
+    grid-template-columns: auto auto;
+  }
+  .list {
     grid-template-columns: auto auto;
   }
 }
@@ -98,10 +104,16 @@ c-list {
   .g-list {
     grid-template-columns: auto auto auto;
   }
+  .list {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 850px) {
   .g-list {
+    grid-template-columns: auto auto auto auto;
+  }
+  .list {
     grid-template-columns: auto auto auto auto;
   }
 }
