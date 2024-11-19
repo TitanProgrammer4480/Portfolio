@@ -84,9 +84,9 @@ c-list {
 }
 
 .btn {
-  background-color: var(--a-accent-color);
+  background-color: var(--b-accent-color);
   color: var(--background-color);
-  border: 2px solid var(--a-accent-color);
+  border: 2px solid var(--b-accent-color);
   border-radius: 25px;
   padding-top: 5px;
   padding-right: 15px;
