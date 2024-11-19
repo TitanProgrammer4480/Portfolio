@@ -22,7 +22,7 @@ a {
 }
 
 .w-border {
-  border: 5px solid var(--b-accent-color);
+  border: 5px solid var(--text-color);
   border-radius: 15px;
   padding-left: 10px;
   padding-right: 10px;
@@ -41,6 +41,14 @@ a {
 
 .p-b-ml {
   padding-bottom: 20px;
+}
+
+.a-a-c {
+  color: var(--a-accent-color);
+}
+
+.b-a-c {
+  color: var(--b-accent-color);
 }
 
 .list {
