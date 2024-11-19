@@ -28,6 +28,10 @@ a {
   padding-right: 10px;
 }
 
+.h-150 {
+  min-height: 150px;
+}
+
 .m-t-l {
   margin-top: 20px;
 }
