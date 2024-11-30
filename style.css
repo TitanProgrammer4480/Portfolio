@@ -85,6 +85,12 @@ c-list {
   margin-bottom:10px;
 }
 
+.list-part-l {
+  width: 200px;
+  min-height: 400px;
+  margin-bottom:10px;
+}
+
 .mh-l {
   min-height: 450px;
 }
