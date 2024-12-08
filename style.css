@@ -24,6 +24,13 @@ header {
   justify-content: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 a {
   color: var(--text-color);
   text-decoration: underline;
@@ -36,12 +43,38 @@ a {
   padding-right: 10px;
 }
 
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#tech-stack {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .h-150 {
   min-height: 150px;
 }
 
 .m-t-l {
   margin-top: 20px;
+}
+
+.m-t-xl {
+  margin-top: 100px;
 }
 
 .m-l-m {
@@ -114,7 +147,12 @@ c-list {
   text-decoration: none;
 }
 
-
+.btn:hover {
+  animation-name: btn-animation;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
 @media only screen and (max-width: 500px) {
   .g-list {
@@ -150,4 +188,9 @@ c-list {
   .list {
     grid-template-columns: auto auto auto auto;
   }
+}
+
+@keyframes btn-animation {
+  from   {transform: scale(1);}
+  to   {transform: scale(1.15);}
 }
