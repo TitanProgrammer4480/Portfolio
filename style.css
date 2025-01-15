@@ -17,6 +17,8 @@ body {
   color: var(--text-color);
   font-family: "Antonio";
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
