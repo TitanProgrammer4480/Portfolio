@@ -20,6 +20,7 @@ header {
   background-color: var(--background-color);
   color: var(--text-color);
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,9 +41,9 @@ a {
 
 .space {
   width: 100%;
-  height: 20px;
+  height: 50px;
   background-color: var(--background-color);
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 70% 70%;
 }
 
 .w-border {
