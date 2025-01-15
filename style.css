@@ -16,8 +16,11 @@ body {
   background-color: var(--text-color);
   color: var(--text-color);
   font-family: "Antonio";
-  overflow: hidden;
   scroll-snap-type: x mandatory;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
