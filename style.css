@@ -1,8 +1,8 @@
 :root {
   --background-color: black;
   --a-accent-color: #38bdf8;
-  --b-accent-color: #38bdf8;
-  --text-color: #fafafa;
+  --b-accent-color: #001f3d;
+  --text-color: white;
 }
 
 html {
