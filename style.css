@@ -6,7 +6,6 @@
 }
 
 html {
-  overflow: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -23,10 +22,7 @@ body {
   font-family: "Antonio";
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
+}::-webkit-scrollbar {
   display: none;
 }
 
