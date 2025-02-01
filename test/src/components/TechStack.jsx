@@ -1,6 +1,6 @@
 import React from 'react'
 import TechItem from "./TechItem"
-import techs from "../assets/Constants"
+import { techs } from "../assets/Constants"
 
 function TechStack() {
 
