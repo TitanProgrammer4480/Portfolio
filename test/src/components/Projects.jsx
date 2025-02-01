@@ -7,9 +7,9 @@ function Projects() {
   const projectList = projects.map((id, name, desc, githubLink, exampleLink,exampleSite) => ProjectItem(id, name, desc, githubLink, exampleLink,exampleSite))
 
   return (
-    <div className='w-full h-screen bg-black text-text-c flex flex-col items-center content-center snap-start'>
+    <div className='w-full h-screen bg-black text-text-c flex flex-col items-center justify-center snap-start'>
       <div>
-        <h2>Projects:</h2>
+        <h2 className='overline'>Projects:</h2>
       </div>
       <ul>
         {projectList}
