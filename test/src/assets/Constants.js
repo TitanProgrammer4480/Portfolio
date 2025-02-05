@@ -64,4 +64,12 @@ export const projects = [
         exampleLink: "",
         exampleSite: true,
     },
+    {
+        id: "portfolio",
+        name: "Portfolio",
+        desc: "This is a python wrapper for the api from a famous minecraft rpg server. It is using hatchling as the build tool for pypi.",
+        githubLink: "https://github.com/TitanProgrammer4480/Wynncraft-wrapper",
+        exampleLink: "",
+        exampleSite: true,
+    },
 ]
