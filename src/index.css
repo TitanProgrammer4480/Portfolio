@@ -29,7 +29,7 @@ body {
 
 @layer base {
   h1 {
-    @apply text-4xl;
+    @apply text-5xl;
     @apply font-bold;
   }
   h2 {
