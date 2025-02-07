@@ -8,7 +8,7 @@ function Projects() {
 
   return (
     <div className='w-full min-h-screen bg-black text-text-c flex flex-col items-center justify-center snap-start'>
-      <div>
+      <div className='mt-4'>
         <h2 className='overline'>Projects:</h2>
       </div>
       <ul>
