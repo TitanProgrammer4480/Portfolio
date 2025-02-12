@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
 import ProjectItem from './ProjectItem'
 import { projects } from "../assets/Constants"
 
