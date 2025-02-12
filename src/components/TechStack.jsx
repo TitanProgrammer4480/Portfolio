@@ -1,10 +1,23 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
+import { createClient } from "@supabase/supabase-js"
 import TechItem from "./TechItem"
-import { techs } from "../assets/Constants"
+
+const supabase = createClient(import.meta.env.VITE_PROJECT_URL, import.meta.env.VITE_ANON_KEY)
 
 function TechStack() {
 
-  const list = techs.map((id, name, link, desc) => TechItem(id, name, link, desc))
+  const [techs, setTechs] = useState([]);
+
+  useEffect(() => {
+    getTechs();
+  }, []);
+
+  async function getTechs() {
+    const { data } = await supabase.from("techs").select();
+    setTechs(data);
+  }
+
+  const techsList = techs.map((id, name, link, desc) => TechItem(id, name, link, desc))
 
   return (
     <section className='min-h-screen w-full bg-text-c text-black flex flex-col items-center justify-center snap-start font-display'>
@@ -14,7 +27,7 @@ function TechStack() {
           <h2 className='overline'>Favourite Technologies:</h2>
         </div>
         <ul>
-          {list}
+          {techsList}
         </ul>
       </div>
     </section>
