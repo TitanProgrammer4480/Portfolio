@@ -1,8 +1,6 @@
 import { React, useEffect, useState } from 'react'
-import { createClient } from "@supabase/supabase-js"
 import TechItem from "./TechItem"
-
-const supabase = createClient(import.meta.env.VITE_PROJECT_URL, import.meta.env.VITE_ANON_KEY)
+import { supabase } from "../supabaseClient"
 
 function TechStack() {
 
