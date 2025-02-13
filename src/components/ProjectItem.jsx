@@ -10,7 +10,7 @@ function ProjectItem({id, name, desc, githubLink, exampleLink, exampleSite}) {
             <Button Text="Code" Link={githubLink} />
             {exampleSite && <Button Text="Demo" Link={exampleLink} />}
         </div>
-        <p>{desc}</p>
+        <p className='mt-2'>{desc}</p>
     </li>
   )
 }
