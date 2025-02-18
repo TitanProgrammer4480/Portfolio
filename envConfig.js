@@ -1,0 +1,1 @@
+export const { VITE_PROJECT_URL, VITE_ANON_KEY } = import.meta.env;
