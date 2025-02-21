@@ -7,7 +7,9 @@ export default function Header() {
         <div>
           <h1> { String.fromCodePoint(9866) } Hi, I&apos;m Sebastian { String.fromCodePoint(9866) } </h1>
           <h2>I&apos;m a <span className="text-accent-c">fullstack developer</span> <br /> and have been coding <span className="text-accent-c">since 2019</span>.</h2>
-          <Button Link="https://github.com/TitanProgrammer4480" Text="Github" />
+          <div className='mt-2'>
+            <Button Link="https://github.com/TitanProgrammer4480" Text="Github" />
+          </div>
         </div>
     </header>
   )
