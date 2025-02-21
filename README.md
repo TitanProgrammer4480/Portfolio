@@ -1,0 +1,4 @@
+- btn hover effect from border to full color
+- btn hiver effect bigger padding
+- wahrscheinlichkeit übungen 30min
+- 
