@@ -30,6 +30,7 @@ body {
 .btn:hover {
   background-color: #007FFF;
   padding: calc(var(--spacing)* 2) calc(var(--spacing)* 6);
+  position: relative;
 }
 
 @layer base {
