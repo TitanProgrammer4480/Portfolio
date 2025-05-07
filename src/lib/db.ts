@@ -26,8 +26,8 @@ const connectDb = async () => {
   if (cached.conn) {
     return cached.conn;
   }
-
   if (!cached.promise) {
+    console.log("started connecting")
     cached.promise = mongoose.connect(MONGODB_URI).then((mongoose) => mongoose);
   }
 
