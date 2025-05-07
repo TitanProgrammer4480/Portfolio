@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 import mongoose from 'mongoose';
 
 interface MongooseCache {
@@ -5,7 +6,6 @@ interface MongooseCache {
   promise: Promise<typeof mongoose> | null;
 }
 
-// eslint-disable-next-line no-var
 declare global {
   var mongoose: MongooseCache | undefined;
 }
