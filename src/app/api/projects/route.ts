@@ -60,12 +60,12 @@ export async function POST(req: NextRequest) {
     }
 }
 
-export async function PATCH(req: NextRequest) {
+export async function PATCH() {
     await connectDb()
     return new Response("test project patch")
 }
 
-export async function DELETE(req: NextRequest) {
+export async function DELETE() {
     await connectDb()
     return new Response("test project delete")
 }

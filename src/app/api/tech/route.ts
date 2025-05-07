@@ -2,24 +2,6 @@ import { NextResponse, NextRequest } from "next/server";
 import connectDb from "@/lib/db"
 import Tech from "../../../models/Tech";
 
-const favourite_tech = [
-    {
-      name: "test1",
-      desc: "test",
-      link: "test"
-    },
-    {
-      name: "test2",
-      desc: "test",
-      link: "test"
-    },
-    {
-      name: "test3",
-      desc: "test",
-      link: "test"
-    },
-  ]
-
 export async function GET() {
     try {
         await connectDb();
@@ -76,12 +58,12 @@ export async function POST(req: NextRequest) {
     }
 }
 
-export async function PATCH(req: NextRequest) {
+export async function PATCH() {
     await connectDb()
     return new Response("test tech patch")
 }
 
-export async function DELETE(req: NextRequest) {
+export async function DELETE() {
     await connectDb()
     return new Response("test tech delete")
 }

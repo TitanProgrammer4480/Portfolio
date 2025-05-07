@@ -8,7 +8,7 @@ const Hero = () => {
             <div className='mr-20'>
                 <h1 className='text-5xl'>Welcome!</h1>
                 <h2 className='text-3xl mt-6'>My name is Sebi.</h2>
-                <h2 className='text-3xl mb-6'>I'm a software developer.</h2>
+                <h2 className='text-3xl mb-6'>I&apos;m a software developer.</h2>
                 <a className='btn btn-primary mr-3' href="https://github.com/TitanProgrammer4480" target='_blank'>Github</a>
                 <a className='btn btn-primary' href="" target='_blank'>Youtube</a>
             </div>
