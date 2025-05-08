@@ -11,7 +11,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <div className='mb-10'>
         <h2 className='text-3xl overline'>Projects:</h2>
       </div>
-      <div className='grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3'>
+      <div className='grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3'>
         {projectList}
       </div>
     </div>
