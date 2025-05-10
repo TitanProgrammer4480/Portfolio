@@ -10,7 +10,7 @@ export async function GET() {
     
         if (projects.length === 0) {
             return NextResponse.json(
-                { message: "Keine Tech-Daten gefunden." },
+                { message: "Keine Project-Daten gefunden." },
                 { status: 404 }
             );
         }
@@ -19,7 +19,7 @@ export async function GET() {
     } catch (error) {
         console.error(error);
         return NextResponse.json(
-            { message: "Fehler beim Abrufen der Tech-Daten." },
+            { message: "Fehler beim Abrufen der Project-Daten." },
             { status: 500 }
         );
     }

@@ -8,7 +8,7 @@ const TechCard = ({ tech }: { tech: Tech }) => {
             <h2 className='card-title'>{tech.name}</h2>
             <p>{tech.desc}</p>
             <div className='justify-end card-actions'>
-                <a href={tech.link} className='btn btn-primary' >Website</a>
+                <a href={tech.link} target='_blank' className='btn btn-primary' >Website</a>
             </div>
         </div>
     </div>
