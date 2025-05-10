@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio
 
-This is a full-stack personal portfolio built with **Next.js**, **Tailwind CSS**, and **DaisyUI**. It showcases my projects, skills, and contact information in a modern and responsive design. The project also includes backend functionality using **Next.js Route Handlers** and stores data in **MongoDB**. The site is deployed on **Vercel**.
+This is a full-stack personal portfolio built with **Next.js**, **Tailwind CSS**, and **DaisyUI**. It showcases my projects, skills.. The project also includes backend functionality using **Next.js Route Handlers** and stores data in **MongoDB**. The site is deployed on **Vercel**.
 
 ## 🚀 Features
 
