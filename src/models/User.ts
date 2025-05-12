@@ -1,30 +1,30 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
-interface ITech extends Document {
+interface IUser extends Document {
     name: string;
-    desc: string;
-    link: string;
+    password: string;
+    tier: number;
 }
 
-const techSchema: Schema = new Schema(
+const userSchema: Schema = new Schema(
 {
     name: {
         type: String,
         required: true,
         unique: true
     },
-    desc: {
+    password: {
         type: String,
         required: true,
     },
-    link: {
-        type: String,
+    tier: {
+        type: Number,
         required: true
     },
   },
   { timestamps: true }
 );
 
-const Tech = mongoose.models?.Tech || mongoose.model<ITech>('Tech', techSchema);
+const User = mongoose.models?.User || mongoose.model<IUser>('User', userSchema);
 
-export default Tech;
+export default User;

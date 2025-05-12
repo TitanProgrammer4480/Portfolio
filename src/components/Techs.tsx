@@ -6,7 +6,7 @@ const Techs = ({ techs }: { techs: Tech[]}) => {
   const cards = techs.map((tech, index) => <TechCard key={index} tech={tech} />);
 
   return (
-    <div className='w-full h-[100vh] mt-20 flex flex-col items-center justify-center'>
+    <div className='w-full min-h-[100vh] pt-40 pb-40 mt-20 flex flex-col items-center justify-center'>
       <div className='mb-10'>
         <h2 className='text-3xl overline'>My favourite tech:</h2>
       </div>

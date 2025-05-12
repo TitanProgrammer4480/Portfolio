@@ -1,8 +1,19 @@
 import React from 'react'
 
 const LoginPage = () => {
+
+  const login = () => {
+
+  }
+
   return (
-    <div>LoginPage</div>
+    <div>
+      <form onSubmit={login}>
+        <input name="name" />
+        <input name="password" />
+        <button type='submit'>Submit</button>
+      </form>
+    </div>
   )
 }
 

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "daisyui": "^5.0.35",
     "lucide-react": "^0.507.0",
     "mongoose": "^8.14.1",

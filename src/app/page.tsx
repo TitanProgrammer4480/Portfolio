@@ -13,7 +13,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const res = await fetch('/api/projects');
+      const res = await fetch('/api/project');
       const data = await res.json();
       setProjects(data);
     };

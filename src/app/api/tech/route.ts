@@ -18,10 +18,7 @@ export async function GET() {
         return NextResponse.json(techs, { status: 200 });
     } catch (error) {
         console.error(error);
-        return NextResponse.json(
-            { message: "Fehler beim Abrufen der Tech-Daten." },
-            { status: 500 }
-        );
+        return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
     }
 }
 
@@ -51,19 +48,58 @@ export async function POST(req: NextRequest) {
         );
     } catch (error) {
         console.error(error);
-        return NextResponse.json(
-          { message: "Es gab ein Problem beim Erstellen des Techs." },
-          { status: 500 }
-        );
+        return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
     }
 }
 
-export async function PATCH() {
-    await connectDb()
-    return new Response("test tech patch")
+export async function PATCH(req: NextRequest) {
+    try {
+        await connectDb();
+        const data = await req.json();
+
+        if(!data._id  || !data.name || !data.desc || !data.link) {
+            return NextResponse.json({ message: "name, description or link are required" }, { status: 400 });
+        }
+        
+        const tech = await Tech.findOneAndUpdate(
+            { _id: data._id },
+            {
+                name: data.name,
+                desc: data.desc,
+                link: data.link
+            },
+            { new: true }
+        );
+        
+        if(!tech) {
+            return NextResponse.json({ message: "No Tech found" }, { status: 404 });
+        }
+
+        return NextResponse.json({ message: "Updated Tech" }, { status: 200 });
+    }catch (err) {
+        console.log("tech patch route: " + err);
+        return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+    }
 }
 
-export async function DELETE() {
-    await connectDb()
-    return new Response("test tech delete")
+export async function DELETE(req: NextRequest) {
+    try {
+        await connectDb();
+        const data = await req.json();
+
+        if(!data._id) {
+            return NextResponse.json({ message: "tech id is required" }, { status: 400 });
+        }
+
+        const tech = await Tech.findByIdAndDelete(data._id);
+
+        if(!tech) {
+            return NextResponse.json({ message: "no tech found" }, { status: 400 });
+        }
+
+        return NextResponse.json({ message: "Deleted Tech" }, { status: 200 });
+    }catch (err) {
+        console.log("tech delete route: " + err);
+        return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+    }
 }

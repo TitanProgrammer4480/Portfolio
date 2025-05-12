@@ -7,7 +7,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   const projectList = projects.map((project, index) => <ProjectCard key={index} project={project} />);
 
   return (
-    <div className='w-full h-[100vh] flex flex-col items-center justify-center bg-base-200'>
+    <div className='w-full min-h-[100vh] pt-40 pb-40 flex flex-col items-center justify-center bg-base-200'>
       <div className='mb-10'>
         <h2 className='text-3xl overline'>Projects:</h2>
       </div>
