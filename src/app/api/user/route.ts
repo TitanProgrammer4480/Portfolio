@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
         const data = await req.json();
 
         if(!data.name || !data.password || !data.tier) {
-            return NextResponse.json({ message: "No name, password or tier is provided" }, { status: c });
+            return NextResponse.json({ message: "No name, password or tier is provided" }, { status: 400 });
         }
 
         const hashedPassword = await bcrypt.hash(data.password, 10);
