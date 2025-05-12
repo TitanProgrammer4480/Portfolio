@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Personal Portfolio
 
-## Getting Started
+This is a full-stack personal portfolio built with **Next.js**, **Tailwind CSS**, and **DaisyUI**. It showcases my projects, skills.. The project also includes backend functionality using **Next.js Route Handlers** and stores data in **MongoDB**. The site is deployed on **Vercel**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Fully responsive design
+* Built with Next.js and Tailwind CSS
+* Styled using DaisyUI components
+* Backend API routes via Next.js route handlers
+* MongoDB integration for dynamic data
+* Hosted and deployed on Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Requirements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Node.js (v18 or higher recommended)
+* MongoDB instance (local or cloud)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Setup & Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/your-portfolio-repo
+   cd your-portfolio-repo
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Set up environment variables:
+   Create a `.env.local` file in the root of the project and add the following:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio in action.
+
+## 📡 API Routes
+
+These are handled using **Next.js route handlers** in the `/app/api` directory. Example usage includes fetching portfolio data or handling contact form submissions.
+
+## 📤 Deployment
+
+This portfolio is deployed using [Vercel](https://vercel.com/), offering automatic deployments on every push to the main branch.
+
+## 📜 License
+
+This project is licensed under the MIT License.
