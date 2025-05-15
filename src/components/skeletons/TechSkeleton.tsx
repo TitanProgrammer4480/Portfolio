@@ -6,8 +6,34 @@ const TechSkeleton = () => {
       <div className='mb-10'>
         <h2 className='text-3xl overline'>My favourite tech:</h2>
       </div>
-      <div className='grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3'>
-        <p>Loading...</p>
+      <div className='grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 animate-pulse'>
+        <div className='card card-border w-90 bg-base-100 text-wrap'>
+            <div className='card-body'>
+                <h2 className='card-title'>Loading...</h2>
+                <p>Loading...</p>
+                <div className='justify-end card-actions'>
+                    <a target='_blank' className='btn btn-primary' >Loading...</a>
+                </div>
+            </div>
+        </div>
+        <div className='card card-border w-90 bg-base-100 text-wrap'>
+            <div className='card-body'>
+                <h2 className='card-title'>Loading...</h2>
+                <p>Loading...</p>
+                <div className='justify-end card-actions'>
+                    <a target='_blank' className='btn btn-primary' >Loading...</a>
+                </div>
+            </div>
+        </div>
+        <div className='card card-border w-90 bg-base-100 text-wrap'>
+            <div className='card-body'>
+                <h2 className='card-title'>Loading...</h2>
+                <p>Loading...</p>
+                <div className='justify-end card-actions'>
+                    <a target='_blank' className='btn btn-primary' >Loading...</a>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   )
