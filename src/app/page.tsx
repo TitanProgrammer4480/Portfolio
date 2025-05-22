@@ -5,8 +5,8 @@ import Hero from '@/components/Hero'
 import Projects from "@/components/Projects"
 import Techs from '@/components/Techs'
 import React, { useEffect, useState } from 'react'
-import ProjectSkeleton from '../components/skeletons/ProjectSkeleton'
-import TechSkeleton from '../components/skeletons/TechSkeleton'
+import ProjectSkeleton from '@/components/skeletons/ProjectSkeleton'
+import TechSkeleton from '@/components/skeletons/TechSkeleton'
 
 const HomePage = () => {
 
@@ -32,7 +32,7 @@ const HomePage = () => {
 
     fetchProjects();
     fetchTech();
-  }, []);
+  }, [])
 
   return (
     <div data-theme="coffee">
